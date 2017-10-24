@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::controller('admin/index','Admin\IndexController');
+Route::controller('admin/login','Admin\LoginController');
+Route::controller('admin/order','Admin\OrderController');
+Route::controller('admin/product','Admin\ProductController');
+Route::controller('admin/user','Admin\UserController');
+Route::controller('admin/system','Admin\SystemController');
+Route::controller('admin/advert','Admin\AdvertController');
